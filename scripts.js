@@ -1,0 +1,1 @@
+console.log('You have successfully activated Musical Chairs. Please check out the project on GitHub and give a review or feedback');
