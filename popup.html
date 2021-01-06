@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Raleway', sans-serif;
+            color: #032a41;
+        }
+        
+        body {
+            width: 295px;
+            height: 296px;
+            background: #FFFFFF;
+        }
+        
+        .container {
+            margin: 0 10px;
+        }
+        
+        header {
+            display: block;
+        }
+        
+        header .logos {
+            display: flex;
+            align-items: center;
+        }
+        
+        header .logos .logo-img {
+            width: max-content;
+        }
+        
+        header .logos .spacer {
+            width: 100%;
+        }
+        
+        header img {
+            width: 92.5px;
+            height: 20px;
+        }
+        
+        header img :first-child {
+            width: 135px;
+            height: 40px;
+        }
+        
+        header .divider {
+            height: 4px;
+            background-color: #FF0000;
+            margin: 5px 0;
+        }
+        
+        .body form {
+            width: fit-content;
+            margin: auto;
+            display: block;
+            margin: 15px auto;
+        }
+        
+        .body span {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 22px;
+        }
+        
+        .body form .secs {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        
+        .body form input {
+            border: 0.5px solid #0275B1;
+            box-sizing: border-box;
+            width: 54px;
+            height: 26px;
+            text-align: right;
+            padding: 1px 0;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+            margin: 0 3px;
+            padding: 0 2px;
+        }
+        
+        .body button {
+            border: 2px solid #0275B1;
+            box-sizing: border-box;
+            border-radius: 5px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 25px;
+            padding: 5px 50px;
+            display: flex;
+            justify-content: center;
+            background-color: #FFFFFF;
+            margin: auto;
+            filter: drop-shadow(0px 1px 2px #0275B1);
+        }
+        
+        .body button img {
+            height: 25px;
+        }
+        
+        .body .actions {
+            margin: 30px auto;
+            width: max-content;
+        }
+        
+        .body .actions img {
+            height: 25px;
+            margin: auto 15px;
+        }
+        
+        footer {
+            margin: 30px auto;
+            width: max-content;
+        }
+        
+        footer .footer_link {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 19px;
+            text-decoration-line: underline;
+            color: #0275B1;
+            /* width: max-content; */
+        }
+        
+        footer a {
+            width: fit-content;
+            margin: auto 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logos">
+                <div class="logo_img"><img src="logo.svg" alt="Musical Chairs Logo"></div>
+
+                <span class="spacer"></span>
+                <div class="logo_img"><img src="yt_logo_rgb_light.png" alt="YouTube Logo"></div>
+            </div>
+            <div class="divider"></div>
+        </header>
+
+        <section class="body">
+            <form action="" method="get" id="secs_form">
+                <span>
+                    Start the game in the next
+                </span>
+                <div class="secs">
+                    <input type="text" name="secs" id="secs" value="10">
+                    <span>seconds</span>
+                </div>
+
+            </form>
+
+            <button id="mc_trigger">Go <img src="music.png" alt="Music Icon"></button>
+
+            <div class="actions">
+                <span id="reset" class="actions_button" title="Reset"><img src="reset.png" /></span>
+                <span id="play_pause" class="actions_button" title="Play / Pause"><img src="playpause.png" /></span>
+                <span id="close" class="actions_button" title="Close Window"><img src="close.png" /></span>
+            </div>
+
+        </section>
+
+        <footer>
+            <a href="#" class="footer_link">Official Site</a>
+            <span class="spacer">|</span>
+            <a href="#" class="footer_link">Source code</a>
+        </footer>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
