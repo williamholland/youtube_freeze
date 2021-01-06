@@ -9,5 +9,10 @@
         "matches": ["http://www.youtube.com/*", "https://www.youtube.com/*"],
         "js": ["scripts.js"],
         "run_at": "document_end"
-    }]
+    }],
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "Musical Chairs on YouTube",
+        "default_icon": "logo_square.png"
+    }
 }
