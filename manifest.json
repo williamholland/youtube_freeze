@@ -1,9 +1,9 @@
 {
-    "name": "Musical Chairs on YouTube",
+    "name": "YouTube FREEZE",
     "version": "1.0",
-    "description": "Enjoy a random fair musical chairs experience without leaving YouTube!",
-    "manifest_version": 2,
-    "short_name": "Musical Chairs on YouTube",
+    "description": "Play a youtube video for a random number of seconds, great for musical chairs, musical statues and more!",
+    "manifest_version": 1,
+    "short_name": "YouTube FREEZE",
     "permissions": ["activeTab", "http://youtube.com/*", "https://youtube.com/*"],
     "content_scripts": [{
         "matches": ["http://www.youtube.com/*", "https://www.youtube.com/*"],
@@ -12,7 +12,7 @@
     }],
     "browser_action": {
         "default_popup": "popup.html",
-        "default_title": "Musical Chairs on YouTube",
+        "default_title": "YouTube FREEZE",
         "default_icon": "logo_square.png"
     },
     "icons": {
