@@ -144,41 +144,26 @@
     <div class="container">
         <header>
             <div class="logos">
-                <div class="logo_img"><img src="logo.svg" alt="Musical Chairs Logo"></div>
-
-                <span class="spacer"></span>
                 <div class="logo_img"><img src="yt_logo_rgb_light.png" alt="YouTube Logo"></div>
+                <span class="spacer"></span>
+                <span class="title">FREEZE</span>
             </div>
-            <div class="divider"></div>
         </header>
 
         <section class="body">
             <form action="" method="get" id="secs_form">
-                <span>
-                    Start the game in the next
-                </span>
                 <div class="secs">
-                    <input type="text" name="secs" id="secs" value="10">
+                    <span>Maximum time:</span>
+                    <input type="number" name="secs" id="secs" value="10">
                     <span>seconds</span>
                 </div>
 
             </form>
 
-            <button id="mc_trigger">Go <img src="music.png" alt="Music Icon"></button>
-
-            <div class="actions">
-                <span id="reset" class="actions_button" title="Reset"><img src="reset.png" /></span>
-                <span id="play_pause" class="actions_button" title="Play / Pause"><img src="playpause.png" /></span>
-                <span id="close" class="actions_button" title="Close Window"><img src="close.png" /></span>
-            </div>
+            <button id="mc_trigger">Start <img src="music.png" alt="Music Icon"></button>
 
         </section>
 
-        <footer>
-            <a target="_blank" href="https://musicalchairsonyoutube.blogspot.com/" class="footer_link">Official Site</a>
-            <span class="spacer">|</span>
-            <a target="_blank" href="https://github.com/onshimiye/musical_chairs/" class="footer_link">Source code</a>
-        </footer>
     </div>
     <script src="popup.js"></script>
 </body>
