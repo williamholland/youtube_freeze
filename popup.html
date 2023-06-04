@@ -12,8 +12,8 @@
         
         body {
             width: 295px;
-            height: 296px;
-            background: #FFFFFF;
+            height: 196px;
+            background: #37B6F6;
         }
         
         .container {
@@ -27,6 +27,11 @@
         header .logos {
             display: flex;
             align-items: center;
+        }
+
+        header .logos .title {
+            color: #F9E104;
+            font-size: 32pt;
         }
         
         header .logos .logo-img {
@@ -72,9 +77,9 @@
             justify-content: center;
             padding: 10px 0;
         }
-        
+
         .body form input {
-            border: 0.5px solid #0275B1;
+            border: 0.5px solid #F9E104;
             box-sizing: border-box;
             width: 54px;
             height: 26px;
@@ -89,7 +94,8 @@
         }
         
         .body button {
-            border: 2px solid #0275B1;
+            transition-duration: 0.4s;
+            border: 2px solid #F9E104;
             box-sizing: border-box;
             border-radius: 5px;
             font-style: normal;
@@ -101,7 +107,11 @@
             justify-content: center;
             background-color: #FFFFFF;
             margin: auto;
-            filter: drop-shadow(0px 1px 2px #0275B1);
+            filter: drop-shadow(0px 1px 2px #F9E104);
+        }
+
+        .body button:hover {
+          background-color: #F9E104;
         }
         
         .body button img {
@@ -129,7 +139,7 @@
             font-size: 14px;
             line-height: 19px;
             text-decoration-line: underline;
-            color: #0275B1;
+            color: #F9E104;
             /* width: max-content; */
         }
         
@@ -157,7 +167,6 @@
                     <input type="number" name="secs" id="secs" value="10">
                     <span>seconds</span>
                 </div>
-
             </form>
 
             <button id="mc_trigger">Start <img src="music.png" alt="Music Icon"></button>
